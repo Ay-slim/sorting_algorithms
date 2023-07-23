@@ -17,7 +17,7 @@ void selection_sort(int *array, size_t size)
 
 	if (!array || size <= 1)
 		return;
-	while (j < size - 1)
+	while (j < size)
 	{
 		will_swap = 0;
 		lowest = array[j];
