@@ -15,6 +15,8 @@ void selection_sort(int *array, size_t size)
 	int tmp;
 	int will_swap;
 
+	if (!array)
+		return;
 	while (j < size - 1)
 	{
 		will_swap = 0;
