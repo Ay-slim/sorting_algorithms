@@ -64,5 +64,7 @@ void quick_sort(int *array, size_t size)
 	int left = 0;
 	int right = size - 1;
 
+	if (!array || size <= 1)
+		return;
 	quick_sort_core(array, left, right, size);
 }
