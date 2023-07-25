@@ -14,7 +14,7 @@ void shell_sort(int *array, size_t size)
 	int temp;
 	int j;
 
-	while (interval < size_casted / 3)
+	while (interval <= size_casted / 3)
 		interval = interval * 3 + 1;
 	while (interval > 0)
 	{
@@ -30,5 +30,11 @@ void shell_sort(int *array, size_t size)
 			array[j] = temp;
 		}
 		interval = (interval - 1) / 3;
+
+		for (i = 0; i < size_casted; i++)
+		{
+			printf("%d ", array[i]);
+		}
+		printf("\n");
 	}
 }
