@@ -14,6 +14,8 @@ void shell_sort(int *array, size_t size)
 	int temp;
 	int j;
 
+	if (size < 1 || !array)
+		return;
 	while (interval <= size_casted / 3)
 		interval = interval * 3 + 1;
 	while (interval > 0)
