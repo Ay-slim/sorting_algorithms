@@ -33,7 +33,9 @@ void shell_sort(int *array, size_t size)
 
 		for (i = 0; i < size_casted; i++)
 		{
-			printf("%d ", array[i]);
+			printf("%d", array[i]);
+			if (i < size_casted - 1)
+				printf(", ");
 		}
 		printf("\n");
 	}
